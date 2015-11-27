@@ -19,7 +19,7 @@
 			<div class="sidebar">
 			</div>
 			<div class="main">
-				<iframe class="iframe" src="log.html" scrolling="auto" frameborder="0"></iframe>
+				<iframe class="iframe" src="" scrolling="auto" frameborder="0"></iframe>
 			</div>
 		</div>
 	</div>

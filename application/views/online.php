@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>首页</title>
-	<link rel="stylesheet" type="text/css" href="../../frontend/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../frontend/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>frontend/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>frontend/css/style.css">
 </head>
 <body>
 	<form class="online">
@@ -32,7 +32,7 @@
 		<div class="item pin">
 			<label>验证码：</label>
 			<input type="text" />
-			<a href="javascript:;"><img src="../../frontend/img/pin.jpg" alt="" /></a>
+			<a href="javascript:;"><img src="<?php echo base_url(); ?>frontend/img/pin.jpg" alt="" /></a>
 		</div>
 		<div class="item">
 			<label></label>

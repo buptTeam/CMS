@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>首页</title>
-	<link rel="stylesheet" type="text/css" href="../../frontend/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../frontend/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>frontend/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>frontend/css/style.css">
 </head>
 <body class="source">
 	<div class="search">
@@ -37,9 +37,9 @@
 		{{/each}}
 	</script>
 
-	<script type="text/javascript" src="../../frontend/js/jquery.min.js"></script>
-	<script type="text/javascript" src="../../frontend/js/template.js"></script>
-	<script type="text/javascript" src="../../frontend/js/source.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>rontend/js/template.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/source.js"></script>
 </body>
 </html>
 

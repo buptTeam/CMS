@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>首页</title>
-	<link rel="stylesheet" type="text/css" href="../../frontend/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../../frontend/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>frontend/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>frontend/css/style.css">
 </head>
 <body>
 	<div class="hd b">
