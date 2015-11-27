@@ -156,7 +156,7 @@ $(function(){
 			navSideHtml = template('model', {item: data[curHash]});
 		$('div.sidebar').html(navSideHtml);
 		// 右侧调用文档更换
-		$('iframe').attr('src', curHash + '.html');
+		$('iframe').attr('src', "monitor"+curHash);
 	}
 
 	// 切换nav时左侧内容更换
