@@ -11,29 +11,30 @@
 	</div>
 	<div class="nav">
 		<div class="wrap">
-			<ul>
-				<li>
-					<a class="on" href="javascript:;">
-						txt
-					</a>
-				</li>
-				<li>
-					<a class="child" href="javascript:;">
-						txt
-						<ul>
-							<li><a href="javascript:;">aaaaaa</a></li>
-							<li><a href="javascript:;">aaaaaa</a></li>
-							<li><a href="javascript:;">aaaaaa</a></li>
-						</ul>
-					</a>
-				</li>
-			</ul>
+			<?php include 'mainnav.php';?>
 		</div>
 			
 	</div>
 	<div class="container">
 		<div class="wrap bg-grey">
 			<div class="sidebar">
+				<ul>
+					<li>
+						<a class="on" href="javascript:;">
+							txt
+						</a>
+					</li>
+					<li>
+						<a class="child" href="javascript:;">
+							txt
+							<ul>
+								<li><a href="javascript:;">aaaaaa</a></li>
+								<li><a href="javascript:;">aaaaaa</a></li>
+								<li><a href="javascript:;">aaaaaa</a></li>
+							</ul>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div class="main">
 				<iframe class="iframe" src="" scrolling="auto" frameborder="0"></iframe>
