@@ -15,9 +15,9 @@ $(function(){
 	// 如果有子集时打开子集
 	$('div.sidebar').on('click', 'a', function(){
 		var $this = $(this);
+		$('ul','div.sidebar>ul>li').hide();
 		if($this.hasClass('child')){
 			var index = $this.index();
-			$('ul','div.sidebar>ul>li').hide();
 			$this.parent().find('ul').show();
 		}
 	});

@@ -348,6 +348,9 @@ div.nav {
         padding-left: 30px; }
 
 .main {
+  height: auto!important;
+  height: 600px;
+  min-height: 600px;
   padding: 14px 0 14px 20px;
   margin-left: 160px;
   background: #fff; }
