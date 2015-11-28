@@ -11,6 +11,23 @@
 	</div>
 	<div class="nav">
 		<div class="wrap">
+			<ul>
+				<li>
+					<a class="on" href="javascript:;">
+						txt
+					</a>
+				</li>
+				<li>
+					<a class="child" href="javascript:;">
+						txt
+						<ul>
+							<li><a href="javascript:;">aaaaaa</a></li>
+							<li><a href="javascript:;">aaaaaa</a></li>
+							<li><a href="javascript:;">aaaaaa</a></li>
+						</ul>
+					</a>
+				</li>
+			</ul>
 		</div>
 			
 	</div>
@@ -25,19 +42,7 @@
 	</div>
 	<div class="footer clear">
 	</div>
-	<script type="text/html" id="model">
-		<ul>
-			{{each item}}
-			<li>
-				<a {{if $index == 0}}class="on {{if $value.child}}child{{/if}}"{{/if}} href="{{$value.url||'javascript:;'}}">
-					{{$value.txt}}
-				</a>
-			</li>
-			{{/each}}
-		</ul>
-	</script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/template.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/head.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/help.js"></script>
 </body>
