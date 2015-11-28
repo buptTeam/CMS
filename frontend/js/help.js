@@ -13,7 +13,7 @@ $(function(){
 		$('div.nav').show();
 	}
 	// 如果有子集时打开子集
-	$('div.sidebar li>a').on('click', function(){
+	$('div.sidebar>ul>li>a').on('click', function(){
 		var $this = $(this);
 		$('ul','div.sidebar>ul>li').hide();
 		if($this.hasClass('child')){
