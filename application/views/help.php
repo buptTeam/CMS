@@ -21,8 +21,13 @@
 			<div class="sidebar">
 				<ul>
 					<li>
-						<a class="on" href="javascript:;">
+						<a class="on child" href="javascript:;">
 							txt
+							<ul>
+								<li><a href="javascript:;">aaaaaa</a></li>
+								<li><a href="javascript:;">aaaaaa</a></li>
+								<li><a href="javascript:;">aaaaaa</a></li>
+							</ul>
 						</a>
 					</li>
 					<li>
