@@ -12,7 +12,7 @@
 	</div>
 	<div class="nav">
 		<div class="wrap">
-			<?php include 'mainnav.php';?>
+			<?php include 'helpnav.php';?>
 		</div>
 			
 	</div>
