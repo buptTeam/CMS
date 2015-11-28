@@ -22,7 +22,26 @@
 			<div class="describe">
 				面向应用性能，提供基于统一平台的监控、管理与测试完整产品方案
 			</div>
-			<ul></ul>
+			<ul>
+				<li>
+					<a href="javascritp:;">
+						<span class="icon icon01"></span>
+						<p>
+							<strong>title111</strong>
+							content222
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascritp:;">
+						<span class="icon icon02"></span>
+						<p>
+							<strong>title111</strong>
+							content222
+						</p>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 	<div class="slider">
@@ -111,29 +130,11 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/html" id="model">
-		<ul>
-			{{each item}}
-			<li>
-				<a href="javascritp:;">
-					<span class="icon icon0{{$index}}"></span>
-					<p>
-						<strong>{{$value.title}}</strong>
-						{{$value.content}}
-					</p>
-				</a>
-			</li>
-			{{/each}}
-		</ul>
-	</script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/head.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/template.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/index.js"></script>
-	<script type="text/javascript">
-	
-	</script>
+
 </body>
 </html>
 
