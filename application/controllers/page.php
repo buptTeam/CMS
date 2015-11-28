@@ -14,6 +14,14 @@ class Page extends CI_Controller {
 	{
 		$this->load->view('explain');
 	}
+	public function monitormainave()
+	{
+		$this->load->view('mainnav');
+	}
+	public function monitortop()
+	{
+		$this->load->view('top');
+	}
 	public function monitorlog()
 	{
 		$this->load->view('log');
