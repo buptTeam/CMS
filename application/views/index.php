@@ -9,32 +9,8 @@
 </head>
 <body>
 	<div class="header">
-		<div class="top">
-			<div class="wrap">
-				<li class="help">
-					<a href="javascript:;">帮助</a>
-					<div class="drop">
-						<a href="page/monitorIndex#monitor">性能监控</a>
-						<a href="javascript:;">性能管理</a>
-						<a href="javascript:;">性能测试</a>
-					</div>
-				</li>
-				<li><a href="javascript:;">资源</a></li>
-				<li><a href="javascript:;">社区</a></li>
-			</div>
-				
-		</div>
-		<div class="mainnav wrap">
-			<h1><img src="<?php echo base_url(); ?>frontend/img/logo.jpg" alt="云智慧" /></h1>
-			<ul class="nav">
-				<li class="on"><a href="javascript:;">产品</a></li>
-				<li><a href="javascript:;">解决方案</a></li>
-				<li><a href="javascript:;">客户</a></li>
-				<li><a href="javascript:;">报告</a></li>
-				<li><a href="javascript:;">公司</a></li>
-				<li><a href="javascript:;">我们的优势</a></li>
-			</ul>
-		</div>
+		<?php include 'head.php';?>
+		<?php include 'mainnav.php';?>
 	</div>
 	<div class="banner">
 		<ul>
