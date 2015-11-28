@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div class="header">
+		<?php include 'top.php';?>
 	</div>
 	<div class="nav">
 		<div class="wrap">
