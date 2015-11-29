@@ -2,7 +2,7 @@
 $setting['models']['content']=array (
   'id' => '2',
   'name' => 'content',
-  'description' => '详细内容',
+  'description' => '帮助详细内容',
   'perpage' => '10',
   'hasattach' => '1',
   'built_in' => '0',
@@ -31,7 +31,7 @@ $setting['models']['content']=array (
     array (
       'id' => '11',
       'name' => 'content',
-      'description' => '班组内容',
+      'description' => '帮助内容',
       'model' => '2',
       'type' => 'wysiwyg',
       'length' => '0',
