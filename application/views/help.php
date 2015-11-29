@@ -42,16 +42,10 @@
 									href="
 							<?php
 							$path=$mes_item["path"];
-							$path=str_replace("}","",$path);
-							$path=str_replace("{","",$path);
-							$path=str_replace(",","",$path);
-							$path=str_replace("0","",$path);
-							$arr=str_split($path);
-							$path="";
-							for ($i=0;$i<count($arr);$i++){
-	                          $path.=($arr[$i]."/");
-							}
-							echo base_url()."page/getpage/".$path.$mes_item["classid"];?>"><?php echo $mes_item["help_category"];?>
+							$path=str_replace("},{","/",$path);
+							$path=str_replace("{0","",$path);
+							$path=str_replace("}","/",$path);
+							echo base_url()."page/getpage".$path.$mes_item["classid"];?>"><?php echo $mes_item["help_category"];?>
 								</a></li>
 								<?php endforeach; ?>
 							</ul>

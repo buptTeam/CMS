@@ -20,7 +20,16 @@ class Db_model extends CI_Model {
 		return $arr;
 	}
 	public function get_left_side($help_categoty,$first_title)
-	{
+	{ 
+		
+		if($first_title==0){
+			$query=$this->db->get_where('u_c_help', array('parentid' => $help_categoty));
+			$arr=$query->result_array();
+			if(count($arr)>0)
+				$first_title=$arr[0]["classid"];
+			else $first_title=-1;
+		}
+		
 		$query=$this->db->get_where('u_c_help', array('parentid' => $first_title));
 		$arr=$query->result_array();
 		$i=0;
