@@ -181,13 +181,6 @@ $setting['menus']=array (
           array (
             'class_name' => 'content',
             'method_name' => 'view',
-            'extra' => 'post',
-            'menu_name' => '文章',
-          ),
-          1 => 
-          array (
-            'class_name' => 'content',
-            'method_name' => 'view',
             'extra' => 'content',
             'menu_name' => '详细内容',
           ),
@@ -202,13 +195,6 @@ $setting['menus']=array (
         'sub_menus' => 
         array (
           0 => 
-          array (
-            'class_name' => 'category_content',
-            'method_name' => 'view',
-            'extra' => 'category',
-            'menu_name' => '文章分类',
-          ),
-          1 => 
           array (
             'class_name' => 'category_content',
             'method_name' => 'view',

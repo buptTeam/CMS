@@ -1,6 +1,22 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Page extends CI_Controller {
+public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('db_model');
+		$this->load->helper('url_helper');
+	}
+	
+	public function getpage($help_categoty=0,$first_title=0,$second_title=0,$third_title=0)
+	{
+		$data['second']=array();
+		$data['first']=$this->db_model->get_up_side($help_categoty);
+		if($first_title!=0){
+			$data['second']=$this->db_model->get_left_side($help_categoty,$first_title);
+		}
+		$this->load->view('help',$data);
+	}
 
 	public function monitorIndex()
 	{

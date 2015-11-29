@@ -12,7 +12,21 @@
 	</div>
 	<div class="nav">
 		<div class="wrap">
-			<?php include 'helpnav.php';?>
+			<ul>	
+	<li>
+		<a class="on " href="#monitor">
+			性能监控
+		</a>
+	</li>
+	
+<?php foreach ($first as $first_item): ?>
+	<li>
+		<a href="<?php echo base_url()."page/getpage/".$first_item['parentid']."/".$first_item['classid']; ?>">
+			<?php echo $first_item['help_category']?>
+		</a>
+	</li>
+<?php endforeach; ?>
+</ul>
 		</div>
 			
 	</div>
@@ -20,30 +34,24 @@
 		<div class="wrap bg-grey">
 			<div class="sidebar">
 				<ul>
-					<li>
+				<?php foreach ($second as $second_item): ?>
+	<li>
 						<a class="on child" href="javascript:;">
-							txt
+							<?php echo $second_item["help_category"];?>
 							<ul>
-								<li><a href="javascript:;">aaaaaa</a></li>
-								<li><a href="javascript:;">aaaaaa</a></li>
-								<li><a href="javascript:;">aaaaaa</a></li>
+							<?php foreach ($second_item['mes'] as $mes_item): ?>
+								<li><a href="javascript:;"><?php echo $mes_item["help_category"];?></a></li>
+								<?php endforeach; ?>
 							</ul>
 						</a>
 					</li>
-					<li>
-						<a class="child" href="javascript:;">
-							txt
-							<ul>
-								<li><a href="javascript:;">aaaaaa</a></li>
-								<li><a href="javascript:;">aaaaaa</a></li>
-								<li><a href="javascript:;">aaaaaa</a></li>
-							</ul>
-						</a>
-					</li>
+<?php endforeach; ?>
+					
+					
 				</ul>
 			</div>
 			<div class="main">
-				<iframe class="iframe" src="" scrolling="auto" frameborder="0"></iframe>
+				
 			</div>
 		</div>
 	</div>
