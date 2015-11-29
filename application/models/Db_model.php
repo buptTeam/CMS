@@ -5,6 +5,13 @@ class Db_model extends CI_Model {
 	{
 		$this->load->database();
 	}
+	public function get_help_name($help_categoty)
+	{
+		$query=$this->db->get_where('u_c_help', array('classid' => $help_categoty));
+		$arr=$query->result_array();
+		//echo var_dump($arr);
+		return $arr;
+	}
 	public function get_up_side($help_categoty)
 	{
 		$query=$this->db->get_where('u_c_help', array('parentid' => $help_categoty));
@@ -22,6 +29,21 @@ class Db_model extends CI_Model {
 		$arr[$i]["mes"]=$query->result_array();
 		$i++;
 		endforeach;
+		//echo var_dump($arr);
+		return $arr;
+	}
+	public function get_content($help_categoty,$first_title,$second_title,$third_title)
+	{
+		$sql="select * from u_m_content where category like '%".$help_categoty."-".$first_title."-".$second_title."-".$third_title."%'";
+		$query=$this->db->query($sql);
+		$arr=$query->result_array();
+		//echo var_dump($arr);
+		return $arr;
+	}
+	public function get_help_category()
+	{
+		$query=$this->db->get_where('u_c_help', array('parentid' => 0));
+		$arr=$query->result_array();
 		//echo var_dump($arr);
 		return $arr;
 	}

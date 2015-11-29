@@ -181,6 +181,13 @@ $setting['menus']=array (
           array (
             'class_name' => 'content',
             'method_name' => 'view',
+            'extra' => 'new',
+            'menu_name' => '新的',
+          ),
+          1 => 
+          array (
+            'class_name' => 'content',
+            'method_name' => 'view',
             'extra' => 'content',
             'menu_name' => '详细内容',
           ),
