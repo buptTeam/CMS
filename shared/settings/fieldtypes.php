@@ -20,6 +20,8 @@ $setting=array (
   ),
   'extra_fieldtypes' => 
   array (
+    'conselect' => '下拉菜单(内容模型数据)(INT)',
+    'file' => '文件上传(VARCHAR)',
   ),
   'validation' => 
   array (

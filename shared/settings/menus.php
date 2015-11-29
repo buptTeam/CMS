@@ -205,6 +205,13 @@ $setting['menus']=array (
           array (
             'class_name' => 'category_content',
             'method_name' => 'view',
+            'extra' => 'source',
+            'menu_name' => '资源',
+          ),
+          1 => 
+          array (
+            'class_name' => 'category_content',
+            'method_name' => 'view',
             'extra' => 'help',
             'menu_name' => '帮助',
           ),

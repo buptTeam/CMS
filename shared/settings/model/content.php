@@ -4,9 +4,9 @@ $setting['models']['content']=array (
   'name' => 'content',
   'description' => '详细内容',
   'perpage' => '10',
-  'hasattach' => '0',
+  'hasattach' => '1',
   'built_in' => '0',
-  'thumb_preferences' => NULL,
+  'thumb_preferences' => '{"enabled":[],"default":"original"}',
   'fields' => 
   array (
     5 => 
@@ -27,11 +27,11 @@ $setting['models']['content']=array (
       'order' => '0',
       'editable' => '1',
     ),
-    4 => 
+    11 => 
     array (
-      'id' => '4',
+      'id' => '11',
       'name' => 'content',
-      'description' => '详细内容',
+      'description' => '班组内容',
       'model' => '2',
       'type' => 'wysiwyg',
       'length' => '0',
@@ -49,11 +49,11 @@ $setting['models']['content']=array (
   'listable' => 
   array (
     0 => '5',
-    1 => '4',
+    1 => '11',
   ),
   'searchable' => 
   array (
     0 => '5',
-    1 => '4',
+    1 => '11',
   ),
 );

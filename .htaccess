@@ -1,3 +1,3 @@
 RewriteEngine on   
-RewriteCond $1 !^(index\.php|frontend|admin)   
+RewriteCond $1 !^(index\.php|frontend|admin|templates|attachments|extensions)   
 RewriteRule ^(.*)$ /index.php/$1 [L]

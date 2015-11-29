@@ -8,7 +8,7 @@
 				<?php endforeach; ?>
 			</div>
 		</li>
-		<li><a href="javascript:;">资源</a></li>
+		<li><a href="<?php echo base_url()."page/getsource";?>">资源</a></li>
 		<li><a href="javascript:;">社区</a></li>
 	</div>	
 </div>

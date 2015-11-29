@@ -12,9 +12,9 @@ $setting=array (
   'site_keyword' => '',
   'site_description' => '',
   'site_theme' => 'default',
-  'attachment_url' => NULL,
+  'attachment_url' => 'http://166.111.143.224/attachments',
   'attachment_dir' => 'attachments',
-  'attachment_type' => '*.jpg;*.gif;*.png;*.doc',
-  'attachment_maxupload' => '2097152',
+  'attachment_type' => '*.jpg;*.gif;*.png;*.doc;*.docx',
+  'attachment_maxupload' => '209715200',
   'thumbs_preferences' => '[]',
 );
