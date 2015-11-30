@@ -12,11 +12,7 @@
 	<div class="header">
 		<?php include 'head.php';?>
 	</div>
-	<div class="search">
-		<select class="select">
-			<option value="">所有类型</option>
-		</select> <a href="javascript:;" class="btn btn-green">搜索</a>
-	</div>
+	
 			
 	<div class="container">
 		<div class="wrap bg-grey">
@@ -41,6 +37,11 @@
 				</ul>
 			</div>
 			<div id="t" class="main">
+			<div class="search">
+		<select class="select">
+			<option value="">所有类型</option>
+		</select> <a href="javascript:;" class="btn btn-green">搜索</a>
+	</div>
 				<?php for($i=0;$i<count($content);$i++){?>
 				<?php if(count($content[$i]["mes"])>0){?>
 					<div class="hd"><?php echo $content[$i]["source_type"]?></div>
