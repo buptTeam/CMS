@@ -38,11 +38,14 @@
 			</div>
 			<div id="t" class="main">
 				<div class="search">
-					<select class="select">
-						<option value="">所有类型</option>
-						<option value="">所有类型1</option>
-						<option value="">所有类型2</option>
-					</select> <a href="javascript:;" class="btn btn-green">搜索</a>
+					<select id="search_select" class="select">
+						<option value="0">所有类型</option>
+						<?php for ($i=0;$i<count($search_list);$i++){?>
+						<option
+						<?php if($search_id==$search_list[$i]["classid"]) echo "selected=\"selected\"";?>
+						 value="<?php echo $search_list[$i]["classid"];?>"><?php echo $search_list[$i]["search_type"];?></option>
+					<?php }?>
+					</select> <a id="search_link" href="<?php echo base_url()."page/getsourcesearch/".$search_id;?>" class="btn btn-green">搜索</a>
 				</div>
 				<?php for($i=0;$i<count($content);$i++){?>
 				<?php if(count($content[$i]["mes"])>0){?>
@@ -86,6 +89,15 @@
 		src="<?php echo base_url(); ?>frontend/js/jquery.min.js"></script>
 		<script type="text/javascript"
 		src="<?php echo base_url(); ?>frontend/js/head.js"></script>
+		<script type="text/javascript">
+$(function(){
+	$('#search_select').on('change', function() {
+		var val=this.value;
+	$('#search_link').attr("href","<?php echo base_url();?>page/getsourcesearch/"+val)	;
+		 // alert( this.value ); // or $(this).val()
+	});
+});
+		</script>
 </body>
 </html>
 
