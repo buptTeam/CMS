@@ -62,7 +62,7 @@
 								href="<?php echo $mes[$j]["video_link"];?>">下载</a> <?php } if($mes[$j]["source_category"]=="file"){?>
 								<a
 								href="<?php  echo base_url()."attachments".$mes[$j]["file"];?>">查看</a>
-								<a
+								<a download="<?php echo $mes[$j]["file"];?>"
 								href="<?php  echo base_url()."attachments".$mes[$j]["file"];?>">下载</a>
 								<?php }?>
 							</span>
