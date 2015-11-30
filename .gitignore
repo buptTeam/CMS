@@ -4,3 +4,7 @@ shared/config/database.php
 
 # ignore all settings
 shared/settings/*
+*.gitignore
+*.css.map
+*.frontend/css/style.css.map
+*.DS_Store
