@@ -69,6 +69,19 @@ class Db_model extends CI_Model {
 		return $arr;
 		
 	}
+	public function get_source_content($first_title,$second_title)
+	{
+		$sql="select * from u_c_source_type where level = 1 order by classid";
+		$query=$this->db->query($sql);
+		$arr=$query->result_array();
+		for($i=0;$i<count($arr);$i++){
+			$sql="select * from u_m_source_content where source_nav like '%".$first_title."-".$second_title."%' and source_type like '%".$arr[$i]["classid"]."%'";
+			$arr[$i]["mes"]=$this->db->query($sql)->result_array();
+		}
+	//	echo var_dump($arr);
+		return $arr;
+	
+	}
 	/*  public function set_news()
 	 {
 	$this->load->helper('url');

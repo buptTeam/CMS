@@ -29,6 +29,10 @@ public function __construct()
 	public function getsource($first_title=0,$second_title=0)
 	{
 		$data['source_nav']=$this->db_model->get_source_nav();
+		$data['content']=array();
+		if($second_title!=0){
+			$data['content']=$this->db_model->get_source_content($first_title,$second_title);
+		}
 		$this->load->view('source',$data);
 	}
 }
