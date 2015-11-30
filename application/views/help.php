@@ -15,7 +15,7 @@
 	<div class="nav">
 		<div class="wrap">
 			<ul>
-				<li><a class="on " href=""> <?php foreach ($help_name as $help_item):
+				<li><a class="on  " href="javasrcipt:;"> <?php foreach ($help_name as $help_item):
 				echo $help_item["help_category"]; endforeach?> </a>
 				</li>
 
@@ -35,7 +35,7 @@
 			<div class="sidebar">
 				<ul>
 					<?php foreach ($second as $second_item): ?>
-					<li><a class="on child" href="javascript:;"> <?php echo $second_item["help_category"];?>
+					<li><a class="on child" href="javasrcipt:;"> <?php echo $second_item["help_category"];?>
 							<ul>
 								<?php foreach ($second_item['mes'] as $mes_item): ?>
 								<li><a
