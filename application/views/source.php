@@ -39,23 +39,29 @@
 	</div>
 
 	<div id="t">
-	
-		<div class="hd">title</div>
+	<?php for($i=0;$i<count($content);$i++){?>
+	<?php if(count($content[$i]["mes"])>0){?>
+		<div class="hd"><?php echo $content[$i]["source_type"]?></div>
 		<div class="bd">
-		
+		  <?php $mes=$content[$i]["mes"];
+		  for($j=0;$j<count($mes);$j++){?>
 			<div class="item">
-				<div class="tit">教学视频-2015-12-12</div>
+				<div class="tit"><?php echo $mes[$j]["title"];?></div>
 				<div class="img">
-					<img src="<?php echo base_url(); ?>frontend/img/banner01.jpg"
-						alt="" /> <span class="mask"> <a href="javascript:;">查看</a> <a
-						href="javascript:;">下载</a>
+					<img src="<?php echo base_url()."attachments".$mes[$j]["pic"]; ?>"
+						alt="" /> <span class="mask"> 
+						<?php if($mes[$j]["source_category"]=="video"){?>
+						<a href="<?php echo $mes[$j]["video_link"];?>">查看</a> 
+						<?php } if($mes[$j]["source_category"]=="file"){?>
+						<a href="<?php  echo base_url()."attachments".$mes[$j]["file"];?>">下载</a>
+						<?php }?>
 					</span>
 				</div>
-				<div class="con">资源技术资源技术资源技术资源技术资源技术资源技术</div>
+				<div class="con"><?php echo $mes[$j]["introduction"];?></div>
 			</div>
-			
+			<?php }?>
 		</div>
-		
+		<?php }}?>
 	</div>
 
 	<script type="text/javascript"
