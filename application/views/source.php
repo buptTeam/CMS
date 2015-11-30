@@ -19,20 +19,22 @@
 	</div>
 	<div class="sidebar">
 		<ul>
-			<li><a class="on child" href="javascript:;"> 99
+		<?php for($i=0;$i<count($source_nav);$i++){?>
+			<li><a class="on child" href="javascript:;"> <?php echo $source_nav[$i]["source_category"]; ?>
 					<ul>
-						<li><a href=" ">hhh</a></li>
-						<li><a href=" ">hhhff</a></li>
+					<?php for($j=0;$j<count($source_nav[$i]["mes"]);$j++){?>
+						<li><a href="
+							<?php
+							$path=$source_nav[$i]["mes"][$j]["path"];
+							$path=str_replace("},{","/",$path);
+							$path=str_replace("{0","",$path);
+							$path=str_replace("}","/",$path);
+							echo base_url()."page/getsource".$path.$source_nav[$i]["mes"][$j]["classid"];?>"><?php echo $source_nav[$i]["mes"][$j]["source_category"];?></a></li>
+						<?php }?>
 					</ul>
 			</a>
 			</li>
-			<li><a class="on child" href="javascript:;"> 9977
-					<ul>
-						<li><a href=" ">hhh77</a></li>
-						<li><a href=" ">hhhff77</a></li>
-					</ul>
-			</a>
-			</li>
+			<?php }?>
 		</ul>
 	</div>
 

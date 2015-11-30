@@ -189,7 +189,7 @@ $setting['menus']=array (
             'class_name' => 'content',
             'method_name' => 'view',
             'extra' => 'source_content',
-            'menu_name' => '资源详细内容',
+            'menu_name' => '资源内容',
           ),
         ),
       ),
@@ -205,15 +205,22 @@ $setting['menus']=array (
           array (
             'class_name' => 'category_content',
             'method_name' => 'view',
-            'extra' => 'source',
-            'menu_name' => '资源',
+            'extra' => 'source_nav',
+            'menu_name' => '资源导航',
           ),
           1 => 
           array (
             'class_name' => 'category_content',
             'method_name' => 'view',
             'extra' => 'help',
-            'menu_name' => '帮助',
+            'menu_name' => '帮助导航',
+          ),
+          2 => 
+          array (
+            'class_name' => 'category_content',
+            'method_name' => 'view',
+            'extra' => 'source_type',
+            'menu_name' => '资源类型',
           ),
         ),
       ),

@@ -56,6 +56,19 @@ class Db_model extends CI_Model {
 		//echo var_dump($arr);
 		return $arr;
 	}
+	public function get_source_nav()
+	{
+		$sql="select * from u_c_source_nav where level = 1 order by classid";
+		$query=$this->db->query($sql);
+		$arr=$query->result_array();
+		for($i=0;$i<count($arr);$i++){
+			$sql="select * from u_c_source_nav where parentid = ".$arr[$i]["classid"]." order by classid";
+			$arr[$i]["mes"]=$this->db->query($sql)->result_array();
+		}
+		//echo var_dump($arr);
+		return $arr;
+		
+	}
 	/*  public function set_news()
 	 {
 	$this->load->helper('url');

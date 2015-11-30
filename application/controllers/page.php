@@ -26,9 +26,10 @@ public function __construct()
 		}
 		$this->load->view('help',$data);
 	}
-	public function getsource()
+	public function getsource($first_title=0,$second_title=0)
 	{
-		$this->load->view('source');
+		$data['source_nav']=$this->db_model->get_source_nav();
+		$this->load->view('source',$data);
 	}
 }
 

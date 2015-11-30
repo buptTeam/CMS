@@ -2,7 +2,7 @@
 $setting['cate_models']['help']=array (
   'id' => '2',
   'name' => 'help',
-  'description' => '帮助',
+  'description' => '帮助导航',
   'perpage' => '10',
   'level' => '4',
   'hasattach' => '0',
