@@ -40,6 +40,8 @@
 				<div class="search">
 					<select class="select">
 						<option value="">所有类型</option>
+						<option value="">所有类型1</option>
+						<option value="">所有类型2</option>
 					</select> <a href="javascript:;" class="btn btn-green">搜索</a>
 				</div>
 				<?php for($i=0;$i<count($content);$i++){?>
