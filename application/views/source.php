@@ -39,8 +39,10 @@
 	</div>
 
 	<div id="t">
+	
 		<div class="hd">title</div>
 		<div class="bd">
+		
 			<div class="item">
 				<div class="tit">教学视频-2015-12-12</div>
 				<div class="img">
@@ -51,60 +53,9 @@
 				</div>
 				<div class="con">资源技术资源技术资源技术资源技术资源技术资源技术</div>
 			</div>
-			<div class="item">
-				<div class="tit">教学视频-2015-12-12</div>
-				<div class="img">
-					<img src="<?php echo base_url(); ?>frontend/img/banner01.jpg"
-						alt="" /> <span class="mask"> <a href="javascript:;">查看</a> <a
-						href="javascript:;">下载</a>
-					</span>
-				</div>
-				<div class="con">资源技术资源技术资源技术资源技术资源技术资源技术</div>
-			</div>
-			<div class="item">
-				<div class="tit">教学视频-2015-12-12</div>
-				<div class="img">
-					<img src="<?php echo base_url(); ?>frontend/img/banner01.jpg"
-						alt="" /> <span class="mask"> <a href="javascript:;">查看</a> <a
-						href="javascript:;">下载</a>
-					</span>
-				</div>
-				<div class="con">资源技术资源技术资源技术资源技术资源技术资源技术</div>
-			</div>
+			
 		</div>
-		<div class="hd">title</div>
-		<div class="bd">
-			<div class="item">
-				<div class="tit">教学视频-2015-12-12</div>
-				<div class="img">
-					<img src="<?php echo base_url(); ?>frontend/img/banner01.jpg"
-						alt="" /> <span class="mask"> <a href="javascript:;">查看</a> <a
-						href="javascript:;">下载</a>
-					</span>
-				</div>
-				<div class="con">资源技术资源技术资源技术资源技术资源技术资源技术</div>
-			</div>
-			<div class="item">
-				<div class="tit">教学视频-2015-12-12</div>
-				<div class="img">
-					<img src="<?php echo base_url(); ?>frontend/img/banner01.jpg"
-						alt="" /> <span class="mask"> <a href="javascript:;">查看</a> <a
-						href="javascript:;">下载</a>
-					</span>
-				</div>
-				<div class="con">资源技术资源技术资源技术资源技术资源技术资源技术</div>
-			</div>
-			<div class="item">
-				<div class="tit">教学视频-2015-12-12</div>
-				<div class="img">
-					<img src="<?php echo base_url(); ?>frontend/img/banner01.jpg"
-						alt="" /> <span class="mask"> <a href="javascript:;">查看</a> <a
-						href="javascript:;">下载</a>
-					</span>
-				</div>
-				<div class="con">资源技术资源技术资源技术资源技术资源技术资源技术</div>
-			</div>
-		</div>
+		
 	</div>
 
 	<script type="text/javascript"
