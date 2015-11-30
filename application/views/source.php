@@ -52,7 +52,9 @@
 						alt="" /> <span class="mask"> 
 						<?php if($mes[$j]["source_category"]=="video"){?>
 						<a href="<?php echo $mes[$j]["video_link"];?>">查看</a> 
+						<a href="<?php echo $mes[$j]["video_link"];?>">下载</a> 
 						<?php } if($mes[$j]["source_category"]=="file"){?>
+						<a href="<?php  echo base_url()."attachments".$mes[$j]["file"];?>">查看</a>
 						<a href="<?php  echo base_url()."attachments".$mes[$j]["file"];?>">下载</a>
 						<?php }?>
 					</span>
