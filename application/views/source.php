@@ -104,6 +104,7 @@ $(function(){
 	$('#search_select').on('change', function() {
 		var val=this.value;
 	$('#search_link').attr("href","<?php echo base_url();?>page/getsourcesearch/"+val)	;
+	document.getElementById("search_link").click(); 
 		 // alert( this.value ); // or $(this).val()
 	});
 });
