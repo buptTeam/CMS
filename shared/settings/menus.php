@@ -222,6 +222,13 @@ $setting['menus']=array (
             'extra' => 'source_type',
             'menu_name' => '资源类型',
           ),
+          3 => 
+          array (
+            'class_name' => 'category_content',
+            'method_name' => 'view',
+            'extra' => 'source_search',
+            'menu_name' => '资源搜索分类',
+          ),
         ),
       ),
     ),

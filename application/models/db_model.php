@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Db_model extends CI_Model {
 
 	public function __construct()
@@ -75,10 +75,35 @@ class Db_model extends CI_Model {
 		$query=$this->db->query($sql);
 		$arr=$query->result_array();
 		for($i=0;$i<count($arr);$i++){
-			$sql="select * from u_m_source_content where source_nav like '%".$first_title."-".$second_title."%' and source_type like '%".$arr[$i]["classid"]."%'";
+			$sql="select * from u_m_source_content where source_nav like '%".$first_title."-".$second_title."%' and source_type = ',".$arr[$i]["classid"].",'";
 			$arr[$i]["mes"]=$this->db->query($sql)->result_array();
 		}
 	//	echo var_dump($arr);
+		return $arr;
+	
+	}
+	public function get_source_search_list()
+	{
+		$sql="select * from u_c_source_search order by classid";
+		$query=$this->db->query($sql);
+		$arr=$query->result_array();
+		//	echo var_dump($arr);
+		return $arr;
+	
+	}
+	public function get_source_search($search_type)
+	{
+		$sql="select * from u_c_source_type where level = 1 order by classid";
+		$query=$this->db->query($sql);
+		$arr=$query->result_array();
+		for($i=0;$i<count($arr);$i++){
+			$sql="select * from u_m_source_content where source_type = ',".$arr[$i]["classid"].",' ";
+			if($search_type!=0){
+				$sql.="and search_type= ',".$search_type.",'";
+			}
+			$arr[$i]["mes"]=$this->db->query($sql)->result_array();
+		}
+		//	echo var_dump($arr);
 		return $arr;
 	
 	}
