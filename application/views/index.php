@@ -23,24 +23,6 @@
 				面向应用性能，提供基于统一平台的监控、管理与测试完整产品方案
 			</div>
 			<ul>
-				<li>
-					<a href="javascritp:;">
-						<span class="icon icon01"></span>
-						<p>
-							<strong>title111</strong>
-							content222
-						</p>
-					</a>
-				</li>
-				<li>
-					<a href="javascritp:;">
-						<span class="icon icon02"></span>
-						<p>
-							<strong>title111</strong>
-							content222
-						</p>
-					</a>
-				</li>
 			</ul>
 		</div>
 	</div>
