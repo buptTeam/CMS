@@ -115,6 +115,7 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/head.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/template.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/index.js"></script>
 
 </body>
