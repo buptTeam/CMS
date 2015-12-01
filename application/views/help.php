@@ -34,8 +34,8 @@
 		<div class="wrap bg-grey">
 			<div class="sidebar">
 				<ul>
-					<?php foreach ($second as $second_item): ?>
-					<li><a class="on child" href="javasrcipt:;"> <?php echo $second_item["help_category"];?>
+					<?php $i=1; foreach ($second as $second_item): ?>
+					<li><a class="<?php if($i==1){ echo "on ";$i++;}?>child" href="javasrcipt:;"> <?php echo $second_item["help_category"];?>
 							<ul>
 								<?php foreach ($second_item['mes'] as $mes_item): ?>
 								<li><a
