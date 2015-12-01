@@ -38,14 +38,23 @@
 			</div>
 			<div id="t" class="main">
 				<div class="search">
-					<select id="search_select" class="select">
+					<a href="javascript:;" id="search_select" class="select"></a>
+					<div class="search_drop">
+						<a href="javascript:;">所有类型</a>
+						<?php for ($i=0;$i<count($search_list);$i++){?>
+						<a href="javascript:;" <?php if($search_id==$search_list[$i]["classid"]) echo "selected=\"selected\"";?>
+						 data-value="<?php echo $search_list[$i]["classid"];?>"><?php echo $search_list[$i]["search_type"];?></a>
+						<?php }?>
+					</div>
+					<!-- <select id="search_select" class="select">
 						<option value="0">所有类型</option>
 						<?php for ($i=0;$i<count($search_list);$i++){?>
 						<option
 						<?php if($search_id==$search_list[$i]["classid"]) echo "selected=\"selected\"";?>
 						 value="<?php echo $search_list[$i]["classid"];?>"><?php echo $search_list[$i]["search_type"];?></option>
 					<?php }?>
-					</select> <a id="search_link" href="<?php echo base_url()."page/getsourcesearch/".$search_id;?>" class="btn btn-green">搜索</a>
+					</select> --> 
+					<a id="search_link" href="<?php echo base_url()."page/getsourcesearch/".$search_id;?>" class="btn btn-green">搜索</a>
 				</div>
 				<?php for($i=0;$i<count($content);$i++){?>
 				<?php if(count($content[$i]["mes"])>0){?>
@@ -57,6 +66,7 @@
 					  for($j=0;$j<count($mes);$j++){?>
 					<div class="item">
 						<div class="tit">
+							<span class="icon"><img src="<?php echo $mes[$j]["img_url"];?>" /></span>
 							<?php echo $mes[$j]["title"];?>
 						</div>
 						<div class="img">

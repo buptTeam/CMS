@@ -46,7 +46,7 @@
 							$path=str_replace("{0","",$path);
 							$path=str_replace("}","/",$path);
 							echo base_url()."page/getpage".$path.$mes_item["classid"];?>"><?php echo $mes_item["help_category"];?>
-								</a></li>
+								<span></span></a></li>
 								<?php endforeach; ?>
 							</ul>
 					</a>

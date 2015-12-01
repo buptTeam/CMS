@@ -41,9 +41,12 @@ $(function(){
 	});
 	// 帮助点击事件
 	var $drop = $('div.drop','div.top');
-	$('div.top').on('click', 'li.help', function(e){
+	$('div.top').on('mouseover', 'li.help', function(e){
 		e.stopPropagation();
 		$(this).addClass('on').find('.drop').show();
+	}).on('mouseout', 'li.help', function(){
+		$drop.hide();
+		$('li.help').removeClass('on');
 	}).on('click', 'div.drop a', function(e){
 		e.stopPropagation();
 		$drop.hide();

@@ -21,4 +21,9 @@ $(function(){
 			$this.parent().find('ul').show();
 		}
 	});
+	// 帮助导航点击效果
+	// $('a', 'div.nav').on('click', function(){
+	// 	$('a', 'div.nav').removeClass('on');
+	// 	$(this).addClass('on');
+	// });
 });

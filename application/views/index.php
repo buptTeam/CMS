@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>frontend/css/style.css">
 </head>
 <body>
-	<div class="header">
+	<div class="header index-header">
 		<?php include 'head.php';?>
 		<?php include 'mainnav.php';?>
 	</div>
