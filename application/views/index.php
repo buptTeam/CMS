@@ -51,7 +51,7 @@
 			<p><a href="javascript:;">新闻内容新闻内容新闻内容新闻内容新闻内容  2015-11-23</a></p>
 		</div>
 	</div>
-	<div class="footer">
+	<div class="footer-index">
 		<div class="wrap">
 			<div class="foot-logo">
 				<img src="<?php echo base_url(); ?>frontend/img/foot-logo.png" alt="" />
