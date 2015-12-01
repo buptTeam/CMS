@@ -112,6 +112,21 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/html" id="model">
+		<ul>
+			{{each item}}
+			<li>
+				<a href="javascritp:;">
+					<span class="icon icon0{{$index}}"></span>
+					<p>
+						<strong>{{$value.title}}</strong>
+						{{$value.content}}
+					</p>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/head.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>frontend/js/jquery.flexslider.js"></script>
