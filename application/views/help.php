@@ -36,6 +36,7 @@
 				<ul>
 					<?php $i=1; foreach ($second as $second_item): ?>
 					<li><a class="<?php if($i==1){ echo "on ";$i++;}?>child" href="javasrcipt:;"> <?php echo $second_item["help_category"];?>
+							<span></span>
 							<ul>
 								<?php foreach ($second_item['mes'] as $mes_item): ?>
 								<li><a
@@ -46,7 +47,7 @@
 							$path=str_replace("{0","",$path);
 							$path=str_replace("}","/",$path);
 							echo base_url()."page/getpage".$path.$mes_item["classid"];?>"><?php echo $mes_item["help_category"];?>
-								<span></span></a></li>
+								</a></li>
 								<?php endforeach; ?>
 							</ul>
 					</a>
