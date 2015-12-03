@@ -1,6 +1,6 @@
 <div class="top">
 	<div class="wrap">
-		<a href="javascript:;" class="help-logo"><img src="<?php echo base_url(); ?>frontend/help-logo.jpg" /></a>
+		<a href="javascript:;" class="help-logo"><img src="<?php echo base_url(); ?>frontend/img/help-logo.jpg" /></a>
 		<ul>
 			<li class="help">
 				<a href="javascript:;">帮助</a>

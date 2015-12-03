@@ -17,6 +17,9 @@
 .b, .strong {
   font-weight: bold; }
 
+.hide {
+  display: none; }
+
 a {
   color: #3e3f3f; }
 
@@ -530,6 +533,8 @@ div.nav {
       border-radius: 4px; }
 
 .help-logo {
-  padding-top: 7px; }
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /*# sourceMappingURL=style.css.map */

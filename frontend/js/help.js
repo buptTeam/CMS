@@ -26,4 +26,16 @@ $(function(){
 	// 	$('a', 'div.nav').removeClass('on');
 	// 	$(this).addClass('on');
 	// });
+	// 帮助左侧菜单点击效果
+	var $sidebar = $('div.sidebar');
+	$sidebar.on('click', 'a', function(){
+		var $this = $(this);
+		if($this.hasClass('child')){
+			var index = $this.index();
+			$('a.child').next('ul').addClass('hide');
+			$this.parent().find('ul').removeClass('hide');
+			$('a',$sidebar).removeClass('on');
+			$this.addClass('on');
+		}
+	});
 });
