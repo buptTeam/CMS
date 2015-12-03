@@ -22,7 +22,7 @@
 				<?php foreach ($first as $first_item): ?>
 				<li><a
 					href="<?php echo base_url()."page/getpage/".$first_item['parentid']."/".$first_item['classid']; ?>">
-						<?php echo $first_item['help_category']?>
+						<?php echo $first_item['help_category']?><span></span>
 				</a>
 				</li>
 				<?php endforeach; ?>
